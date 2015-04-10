@@ -37,18 +37,18 @@ public class FirstServlet extends HttpServlet
 				+ "<body>");
 		
 		List<User> users = new ArrayList<User>();
-		users.add(new User("Иванов Иван", "ivanov@gmail.com"));
-		users.add(new User("Петров Иван", "petrov@gmail.com"));
-		users.add(new User("Сидоров Иван", "sidorov@gmail.com"));
-		users.add(new User("Лукашенко Иван", "luka@gmail.com"));
-		users.add(new User("Путин Иван", "put-in@gmail.com"));
-		users.add(new User("Медведев Иван", "medved@gmail.com"));
-		users.add(new User("Обама Иван", "monkey@gmail.com"));
+		users.add(new User("РРІР°РЅРѕРІ РРІР°РЅ", "ivanov@gmail.com"));
+		users.add(new User("РџРµС‚СЂРѕРІ РџРµС‚СЂ", "petrov@gmail.com"));
+		users.add(new User("РЎРёРґРѕСЂРѕРІ РРІР°РЅ", "sidorov@gmail.com"));
+		users.add(new User("Р›СѓРєР°С€РµРЅРєРѕ РРІР°РЅ", "luka@gmail.com"));
+		users.add(new User("РџСѓС‚РёРЅ РРІР°РЅ", "put-in@gmail.com"));
+		users.add(new User("РњРµРґРІРµРґРµРІ РРІР°РЅ", "medved@gmail.com"));
+		users.add(new User("РћР±Р°РјР° РРІР°РЅ", "monkey@gmail.com"));
 		
 		String cls = "";
 		String curStringDate = new SimpleDateFormat("dd.MM.yyyy").format(new Date()); 
 
-		out.println("<h1>Список пользователей на "+curStringDate+": </h1>");
+		out.println("<h1>РЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РЅР° "+curStringDate+": </h1>");
 		out.println("<ol>");
 		
 		for (int i = 0; i < users.size(); i++) 
@@ -58,7 +58,7 @@ public class FirstServlet extends HttpServlet
 			if (i>=2) 
 			{
 				out.println("<a href=\"mailto:"+users.get(i).email+"\"> "+users.get(i).email+"</a>"+"("+users.get(i).username+")");
-				if (i==3) out.println("<br/>Половина!");
+				if (i==3) out.println("<br/>РџРѕР»РѕРІРёРЅР°!");
 			}
 			else
 				out.println(users.get(i).username+" (<a href=\"mailto:"+users.get(i).email+"\">"+users.get(i).email+"</a>)");
